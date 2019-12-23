@@ -7,5 +7,6 @@ c.adjust_pen()
 c.create_clock()
 c.put_hand()
 c.show_events()
+c.options()
 c.loop()
 
