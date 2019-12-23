@@ -96,9 +96,9 @@ class WeeklyClock:
 
 
         print(eventname)
-        b1=tkinter.Button(self.clockscreen,text="CREATE EVENT", width=15,)#command=sc.CreateEvent(e1.get(),e2.get())
+        b1=tkinter.Button(self.clockscreen,text="CREATE EVENT", width=15,)#command=EventCreate
         b1.place(x=600,y=600)
-        b2=tkinter.Button(self.clockscreen,text="CANCEL EVENT", width=15)#command=cancel_event
+        b2=tkinter.Button(self.clockscreen,text="CANCEL EVENT", width=15,)#command=EventCancel
         b2.place(x=600,y=625)
 
 
@@ -110,4 +110,12 @@ class WeeklyClock:
     def loop(self):
         self.clockscreen.mainloop()
     
-
+#def EventCreate(self):
+#		eventName = e1.get()
+#		eventDate = e2.get()
+#		Actions.CreateEvent(eventName + eventDate)
+#
+#def EventCancel(self):
+#	eventName = e1.get()
+#	Actions.DeleteEvent(eventName)
+#
